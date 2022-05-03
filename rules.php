@@ -25,29 +25,29 @@
 		</div>
 		<div class="b-example-divider"></div>
 		<div class="container col-xxl-8 px-4 py-5">
-		    <h1>Reporting incidents</h1>
+		    <h1>Reporting incident</h1>
 		    <p>
 		    	Please file a report by contacting us (using the form below) that includes the following information or whatever,
 		    	parts of the information you have. Reporting is very important to creating a safe environment for all participants
 		    	so please report any incidents, you witness. 
 		    </p>
-		    <form>
+		    <form action="report.php" method="POST" enctype="multipart/form-data">
  	    	  <div class="mb-3">
  	    	    <label for="email" class="form-label">Email address</label>
- 	    	    <input type="email" class="form-control" id="email">
+ 	    	    <input name="email" type="email" class="form-control" id="email" required>
  	    	    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
  	    	  </div>
 		      <div class="mb-3">
       		  	<span class="input-group-text" id="inputGroup-sizing-sm">Name of witnesses</span>
-      			<input id="witness" type="text" class="form-control">
+      			<input name="witnesses" id="witnesses" type="text" class="form-control">
  	    	    <div id="witnessHelp" class="form-text">Seperated by comma</div>
 		      </div>
 		      <div class="mb-3">
       			<span class="input-group-text">A description of the incident</span>
-      			<textarea id="description" class="form-control"></textarea>
+      			<textarea name="description" id="description" class="form-control"></textarea>
  	    	    <div id="witnessHelp" class="form-text">Please tell us when and where the incident occurred. Information like links, urls to pictures, and background information are useful.</div>
 		      </div>
- 	    	  <button type="submit" class="btn btn-primary">Submit</button>
+ 	    	  <input name="submit" type="submit" class="btn btn-primary" value="Report">
 		    </form>
 		</div>
 
