@@ -17,7 +17,7 @@
 
 	    <div class="container col-xxl-8 px-4 py-5">
  	        <h1>Thanks for your reporting!</h1>
- 	        <p>Thanks. We'll get back to you as soon as possible.</p>
+ 	        <p>We'll get back to you as soon as possible.</p>
         </div>
 
     	<?php $email = $_POST['email']; ?>

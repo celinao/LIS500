@@ -15,22 +15,22 @@
             <p>
                 How can we help you?
             </p>
-            <form action="contact_msg.php" method="POST" enctype="multipart/form-data">
+            <form action="schedule.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="firstname" class="form-label">First Name</label>
-                    <input name="firstname" id="firstname" type="text" class="form-control">
+                    <label for="firstname" class="form-label">First Name*</label>
+                    <input name="firstname" id="firstname" type="text" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="lastname" class="form-label">Last Name</label>
-                    <input name="lastname" id="lastname" type="text" class="form-control">
+                    <label for="lastname" class="form-label">Last Name*</label>
+                    <input name="lastname" id="lastname" type="text" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
+                    <label for="email" class="form-label">Email address*</label>
                     <input name="email" type="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="firstname" class="form-label">Message</label>
-                    <textarea name="description" id="description" class="form-control"></textarea>
+                    <label for="message" class="form-label">Message*</label>
+                    <textarea name="message" id="message" class="form-control" required></textarea>
                 </div>
                 <input name="submit" type="submit" class="btn btn-primary" value="Send My Message">
             </form>
